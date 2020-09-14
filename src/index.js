@@ -1,7 +1,11 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener('DOMContentLoaded',function(){
   
+<<<<<<< HEAD
   fetchImg();
+=======
+  // fetchImg();
+>>>>>>> 55c1ee4f4d1b0506864599c9eb2689389675a91e
   fetchBreed();
 
 })
@@ -51,8 +55,14 @@ function filterBreeds(b){
     let dropdown = document.querySelector('#breed-dropdown');
     dropdown.addEventListener('change',(e) => {
      document.getElementById('dog-breeds').innerHTML = '';
+<<<<<<< HEAD
     let filterB = b.filter(breed => breed.startsWith(e.target.value))
   
       createBreed(filterB);
+=======
+    let filterB = b.filter(breed => breed.startsWith(e.value))
+     console.log(e.value);
+      // createBreed();
+>>>>>>> 55c1ee4f4d1b0506864599c9eb2689389675a91e
     })
 }
